@@ -1,0 +1,11 @@
+.modelos{
+    position: relative;
+}
+
+.censor{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+}
