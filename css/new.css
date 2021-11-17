@@ -1,5 +1,10 @@
 .modelos{
     position: relative;
+    border: rgb(48, 48, 48);
+    border-width: 0.5px;
+    border-style: solid;
+    overflow: hidden;
+    max-height: 600px;
 }
 
 .censor{
