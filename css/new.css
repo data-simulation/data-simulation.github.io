@@ -7,6 +7,12 @@
     max-height: 600px;
 }
 
+.modelo_titulo{
+    position: relative;
+    overflow: hidden;
+    max-height: 300px;
+}
+
 .texto{
     width: 100%;
 }
@@ -14,6 +20,11 @@
 .iframe_Modelos{
     width: 100%;
     height: 650px;
+}
+
+.iframe_Modelo_titulo{
+    width: 100%;
+    height: 350px;
 }
 
 .descripcion_modelo{
@@ -28,6 +39,21 @@
     padding: 20px;
 }
 
+.img_proceso{
+    height: auto;
+    width: 50%;
+}
+
+.div_explicacion{
+    border: rgb(48, 48, 48);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.texto_explicacion{
+    padding-left: 100px;
+}
+
 @media screen and (max-width: 800px) {
     .modelos{ 
         max-height: 400px;
@@ -35,6 +61,10 @@
     
     .iframe_Modelos{
         height: 450px;
+    }
+
+    .texto_explicacion{
+        padding-left: 0px;
     }
 }
 
