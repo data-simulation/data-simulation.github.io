@@ -10,7 +10,7 @@
 .modelo_titulo{
     position: relative;
     overflow: hidden;
-    max-height: 300px;
+    max-height: 500px;
 }
 
 .texto{
@@ -24,7 +24,7 @@
 
 .iframe_Modelo_titulo{
     width: 100%;
-    height: 350px;
+    height: 550px;
 }
 
 .descripcion_modelo{
