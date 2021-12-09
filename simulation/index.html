@@ -21,8 +21,8 @@
     
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="info.js"></script>
-    <script src="navegacion.js"></script>
-    <script type="module" src="script.js"></script>
+    <script src="navegacion.js"></script><!-- 
+    <script type="module" src="script.js"></script> -->
 
 </head>
 <body>
@@ -36,36 +36,66 @@
     <div id="controlPanel">
         <div id="headPanel">   
             <div id="numeroPanel"><p>1</p></div>
-            <div id="tituloPanel"><p>Videos</p></div>
+            <div id="tituloPanel"><p>Obtención de datos</p></div>
         </div>
         <div id="infoPanel">
 
             <div id="infoPanel1">
-                <code>Panel de navegación</code>
                 <br>
-                <img src="assets/a.png" alt="">
-                <code>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, assumenda? Numquam quaerat illum facere alias magnam, voluptatum necessitatibus corporis officiis assumenda. Nihil ipsam facere sunt voluptatem modi veritatis. Quia, cumque.</code>  
+                <p>Registro en video de la plaza Luis Braille de Alicante realizado el 26 de Nomviembre entre las 5 y las 6 de la tarde con un teléfono movil.</p>
+                <br>
+                <p>Procesamiento de las imágenes mediante el algoritmo YOLO. Se detectan distintos agentes y categorias: person, bench, car, truck y bird.</p>
+                <br>
+                <br>
+                <img src="assets/yolo.jpg" alt="">
+                <br>
+                <br>
+                <p>Los arboles de la plaza dificultan el análisis de las imágenes por lo que se opta por completarlo con grabaciones a pie de calle.</p>  
+                <br>
+                <p>La categoría BIRD es la que se detecta con menor precisión. YOLO detecta el conjunto pero no los individuos.</p>
             </div>
 
             <div id="infoPanel2">
-                <code>Panel de navegación</code>
                 <br>
-                <img src="assets/a.png" alt="">
-                <code>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, assumenda? Numquam quaerat illum facere alias magnam, voluptatum necessitatibus corporis officiis assumenda. Nihil ipsam facere sunt voluptatem modi veritatis. Quia, cumque.</code>  
+                <p>Al no tener buenos datos de los pájaros, se simulan según las condiciones del algoritmo <i>Flocks, herds and schools: A distributed behavioral model</i> (1987) de Craig Reynolds: separación. alineación y cohesión.</p>
+                <br>
+                <img src="assets/boids.gif" alt="">
+                <br>
+                <br>
+                <p>La simulación se pone a prueba con los datos del entorno real. A las reglas del algoritmo se añaden condiciones de dimensión del entorno, presencia y movimiento de personas y vehículos, ruido y tiempo para que el comportamiento se ajuste al de la plaza Luis Braille.</p>
+                <br>
+                <p>Esta simulación se representa tridimensionalmente para permitir un mejor entendimiento del espacio por parte de humanos.</p>
             </div>
 
             <div id="infoPanel3">
-                <code>Panel de navegación</code>
                 <br>
-                <img src="assets/a.png" alt="">
-                <code>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, assumenda? Numquam quaerat illum facere alias magnam, voluptatum necessitatibus corporis officiis assumenda. Nihil ipsam facere sunt voluptatem modi veritatis. Quia, cumque.</code>  
+                <p>La base de datos recopila los datos reales y los simulados para representar todas las dimensiones del entorno.</p>
+                <br>
+                <img src="assets/penguin.jpg" alt="">
+                <br>
+                <br>
+                <p>Aunque el modelo 3D es el que mejor entienden las personas, hay dimensiones que no alcanzan a representar, como la evolución en el tiempo.</p>
+                <br>
+                <p>La gran cantidad de datos manejados satura el modelo 3D, por lo que se plantean otros métodos de representación que traducen las condiciones a mapas, gráficas y matrices de datos. Del cruzamiento de datos con algoritmos de clusterizado se pueden obtener otros nuevos, como categorías de uso o temporalidad de las actividades.</p>
+                <br>
+                <img src="assets/cluster.png" alt="">
             </div>
 
             <div id="infoPanel4">
-                <code>Panel de navegación</code>
                 <br>
-                <img src="assets/a.png" alt="">
-                <code>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, assumenda? Numquam quaerat illum facere alias magnam, voluptatum necessitatibus corporis officiis assumenda. Nihil ipsam facere sunt voluptatem modi veritatis. Quia, cumque.</code>  
+                <p>Toda la información se codifica  y se comprime por dos motivos. Las GPUs trabajan de forma óptima con matrices cuadradas y con la intención de codificar para homogeneizar todas las diferentes plazas y sus condiciones (tipo, tamaño, usos) bajo un lenguaje común.</p>
+                <br>
+                <img src="assets/barcode.jpg" alt="">
+                <br>
+                <br>
+                <p>Esta codificación está pensada para los ordenadores, no para las personas, por lo que no se puede entender a simple vista sin decodificar.</p>
+                <br>
+                <img src="assets/texture.jpg" alt="">
+                <br>
+                <br>
+                <p>Esta codificación alberga todas las características que definen cada espacio urbano para comparar todas las distintas plazas y sus relaciones y que el algoritmo aprenda de la base de datos.</p>
+                <br>
+                <img src="assets/alpha.jpg" alt="">
             </div>
 
         </div>

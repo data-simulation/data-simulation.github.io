@@ -8,6 +8,9 @@ $(document).ready(function () {
             $("#modelo").css("display", "none"); */
             $(".webViewer").attr('src','videos.html');
             $("#numeroPanel").find("p").text("1");
+            $("#tituloPanel").find("p").text("Obtención de datos");
+            $("#infoPanel1").css("display", "inline");
+            $("#infoPanel2").css("display", "none");
         }
 
         if(page == 2){
@@ -16,6 +19,10 @@ $(document).ready(function () {
             $("#datos").css("display", "none"); */
             $(".webViewer").attr('src','3D/index.html');
             $("#numeroPanel").find("p").text("2");
+            $("#tituloPanel").find("p").text("Simulación");
+            $("#infoPanel1").css("display", "none");
+            $("#infoPanel2").css("display", "inline");
+            $("#infoPanel3").css("display", "none");
         }
 
         if(page == 3){
@@ -24,6 +31,10 @@ $(document).ready(function () {
             $("#codigo").css("display", "none"); */
             $(".webViewer").attr('src','assets/1.html');
             $("#numeroPanel").find("p").text("3");
+            $("#tituloPanel").find("p").text("Base de datos");
+            $("#infoPanel2").css("display", "none");
+            $("#infoPanel3").css("display", "inline");
+            $("#infoPanel4").css("display", "none");
         }
 
         if(page == 4){
@@ -31,6 +42,9 @@ $(document).ready(function () {
             $("#codigo").css("display", "block"); */
             $(".webViewer").attr('src','assets/2.html');
             $("#numeroPanel").find("p").text("4");
+            $("#tituloPanel").find("p").text("Codificación");
+            $("#infoPanel3").css("display", "none");
+            $("#infoPanel4").css("display", "inline");
         }
 
 
