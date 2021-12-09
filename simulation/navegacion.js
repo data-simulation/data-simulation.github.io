@@ -4,28 +4,32 @@ $(document).ready(function () {
 
     function myFunction() {
         if(page == 1){
-            $("#videos").css("display", "block");
-            $("#modelo").css("display", "none");
+            /* $("#videos").css("display", "block");
+            $("#modelo").css("display", "none"); */
+            $(".webViewer").attr('src','videos.html');
             $("#numeroPanel").find("p").text("1");
         }
 
         if(page == 2){
-            $("#videos").css("display", "none");
+            /* $("#videos").css("display", "none");
             $("#modelo").css("display", "block");
-            $("#datos").css("display", "none");
+            $("#datos").css("display", "none"); */
+            $(".webViewer").attr('src','3D/index.html');
             $("#numeroPanel").find("p").text("2");
         }
 
         if(page == 3){
-            $("#modelo").css("display", "none");
+            /* $("#modelo").css("display", "none");
             $("#datos").css("display", "block");
-            $("#codigo").css("display", "none");
+            $("#codigo").css("display", "none"); */
+            $(".webViewer").attr('src','assets/1.html');
             $("#numeroPanel").find("p").text("3");
         }
 
         if(page == 4){
-            $("#datos").css("display", "none");
-            $("#codigo").css("display", "block");
+            /* $("#datos").css("display", "none");
+            $("#codigo").css("display", "block"); */
+            $(".webViewer").attr('src','assets/2.html');
             $("#numeroPanel").find("p").text("4");
         }
 
