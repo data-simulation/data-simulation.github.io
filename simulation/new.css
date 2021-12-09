@@ -1,0 +1,166 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: rgb(213, 255, 213);
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 0;
+    display: none;
+}
+
+#controlPanel{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+    width: 20%;
+    background-color: rgb(41, 41, 41);
+}
+
+@media only screen and (max-width: 600px) {
+    #controlPanel{
+        width: 90%;
+    }
+  }
+
+#headPanel{
+    display: flex;  
+    flex-flow: row wrap;
+}
+
+#infoPanel {
+    height: 0px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-color: #5e5e5e #242424;
+    scrollbar-width: thin;
+}
+
+#infoPanel img {
+    width: 100%;
+}
+
+#infoPanel::-webkit-scrollbar {
+width: 10px;
+}
+
+#infoPanel::-webkit-scrollbar-track {
+background-color: #585858;
+border-radius: 100px;
+}
+
+#infoPanel::-webkit-scrollbar-thumb {
+border-radius: 100px;
+box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+
+#infoPanel2, #infoPanel3, #infoPanel4 {
+    display: none;
+}
+
+#tituloPanel, #izqPanel, #derPanel, #numeroPanel {
+    padding: 0.5em 0;
+}
+
+#numeroPanel{
+    flex: 1 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+#tituloPanel{
+    flex: 1 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+#arrowPanel{
+    display: flex;
+}
+
+#izqPanel, #derPanel {
+    flex: 1 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#izqPanel:hover, #derPanel:hover {
+    background-color: rgb(139, 139, 139);
+    cursor: pointer;
+}
+
+#videos{
+    width: 100%;
+    height: 100%;
+}
+
+.rowVideos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+}
+
+.columnVideos{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.video-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+#datos{
+    width: 100%;
+    height: 100%;
+    cursor:all-scroll;
+    display: none;
+    background-color: rgb(226, 208, 43);
+}
+
+#codigo{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(86, 226, 43);
+    display: none;
+}
+
+.webViewer{
+    width: 200px;
+    height: 200px;
+}
