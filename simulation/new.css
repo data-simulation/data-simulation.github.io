@@ -161,6 +161,6 @@ box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
 }
 
 .webViewer{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
 }
