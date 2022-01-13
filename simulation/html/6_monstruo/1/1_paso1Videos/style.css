@@ -1,0 +1,33 @@
+#videos{
+    width: 100%;
+    height: 100%;
+}
+
+.rowVideos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+}
+
+.columnVideos{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.video-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+  }
