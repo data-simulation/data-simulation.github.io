@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>---data---simulation---</title>
+
+    
+    <link rel="stylesheet" href="new.css">
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+    
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/navegacion.js"></script><!-- 
+    <script type="module" src="script.js"></script> -->
+
+</head>
+<body>
+
+
+
+
+    <!-- PANEL DE NAVEGACIÓN -->
+
+
+    <div id="controlPanel">
+        <div id="headPanel">   
+            <div id="numeroPanel"><p>0</p></div>
+            <div id="tituloPanel"><p>Diagrama</p></div>
+        </div>
+        <div id="infoPanel">
+
+            <div id="infoPanel0">
+                <br>
+                <p>Diagrama</p>
+                <br>
+                <p>diagrama</p>
+                <br>
+                <br>
+                <img src="assets/yolo.jpg" alt="">
+                <br>
+                <br>
+                <p>diagrama</p>  
+                <br>
+                <p>diagrama</p>
+            </div>
+
+            <div id="infoPanel1">
+                <br>
+                <p>Registro en video de la plaza Luis Braille de Alicante realizado el 26 de Nomviembre entre las 5 y las 6 de la tarde con un teléfono movil.</p>
+                <br>
+                <p>Procesamiento de las imágenes mediante el algoritmo YOLO. Se detectan distintos agentes y categorias: person, bench, car, truck y bird.</p>
+                <br>
+                <br>
+                <img src="assets/yolo.jpg" alt="">
+                <br>
+                <br>
+                <p>Los arboles de la plaza dificultan el análisis de las imágenes por lo que se opta por completarlo con grabaciones a pie de calle.</p>  
+                <br>
+                <p>La categoría BIRD es la que se detecta con menor precisión. YOLO detecta el conjunto pero no los individuos.</p>
+            </div>
+
+            <div id="infoPanel2">
+                <br>
+                <p>Al no tener buenos datos de los pájaros, se simulan según las condiciones del algoritmo <i>Flocks, herds and schools: A distributed behavioral model</i> (1987) de Craig Reynolds: separación. alineación y cohesión.</p>
+                <br>
+                <img src="assets/boids.gif" alt="">
+                <br>
+                <br>
+                <p>La simulación se pone a prueba con los datos del entorno real. A las reglas del algoritmo se añaden condiciones de dimensión del entorno, presencia y movimiento de personas y vehículos, ruido y tiempo para que el comportamiento se ajuste al de la plaza Luis Braille.</p>
+                <br>
+                <p>Esta simulación se representa tridimensionalmente para permitir un mejor entendimiento del espacio por parte de humanos.</p>
+            </div>
+
+            <div id="infoPanel3">
+                <br>
+                <p>La base de datos recopila los datos reales y los simulados para representar todas las dimensiones del entorno.</p>
+                <br>
+                <img src="assets/penguin.jpg" alt="">
+                <br>
+                <br>
+                <p>Aunque el modelo 3D es el que mejor entienden las personas, hay dimensiones que no alcanzan a representar, como la evolución en el tiempo.</p>
+                <br>
+                <p>La gran cantidad de datos manejados satura el modelo 3D, por lo que se plantean otros métodos de representación que traducen las condiciones a mapas, gráficas y matrices de datos. Del cruzamiento de datos con algoritmos de clusterizado se pueden obtener otros nuevos, como categorías de uso o temporalidad de las actividades.</p>
+                <br>
+                <img src="assets/cluster.png" alt="">
+            </div>
+
+            <div id="infoPanel4">
+                <br>
+                <p>Toda la información se codifica  y se comprime por dos motivos. Las GPUs trabajan de forma óptima con matrices cuadradas y con la intención de codificar para homogeneizar todas las diferentes plazas y sus condiciones (tipo, tamaño, usos) bajo un lenguaje común.</p>
+                <br>
+                <img src="assets/barcode.jpg" alt="">
+                <br>
+                <br>
+                <p>Esta codificación está pensada para los ordenadores, no para las personas, por lo que no se puede entender a simple vista sin decodificar.</p>
+                <br>
+                <img src="assets/texture.jpg" alt="">
+                <br>
+                <br>
+                <p>Esta codificación alberga todas las características que definen cada espacio urbano para comparar todas las distintas plazas y sus relaciones y que el algoritmo aprenda de la base de datos.</p>
+                <br>
+                <img src="assets/alpha.jpg" alt="">
+            </div>
+
+            <div id="infoPanel5">
+                <br>
+                <p>Proceso inverso</p>
+                <br>
+                <img src="assets/barcode.jpg" alt="">
+                <br>
+                <br>
+                <p>Proceso inverso</p>
+                <br>
+                <img src="assets/texture.jpg" alt="">
+                <br>
+                <br>
+                <p>Proceso inverso</p>
+                <br>
+                <img src="assets/alpha.jpg" alt="">
+            </div>
+
+            <div id="infoPanel6">
+                <br>
+                <p>Monstruo</p>
+                <br>
+                <img src="assets/barcode.jpg" alt="">
+                <br>
+                <br>
+                <p>Monstruo</p>
+                <br>
+                <img src="assets/texture.jpg" alt="">
+                <br>
+                <br>
+                <p>Monstruo</p>
+                <br>
+                <img src="assets/alpha.jpg" alt="">
+            </div>
+
+        </div>
+        <div id="arrowPanel">
+            <div id="izqPanel"><i class="fas fa-arrow-left"></i></div>
+            <div id="derPanel"><i class="fas fa-arrow-right"></i></div>
+        </div>
+    </div>
+
+    <div id="iframe">
+        <iframe class="webViewer" src="html/0_esquemaInicial/index.html" frameborder="0"></iframe>
+    </div>
+
+</body>
+</html>

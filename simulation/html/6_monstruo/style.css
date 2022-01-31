@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: rgb(213, 255, 213);
+}
+
+#esquema {
+    display: flex;
+    height: 100%;
+    min-height: 700px;
+}
+
+.paso{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+}
+
+.flecha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    margin: 80px 40px 20px 40px;
+}
+
+.pasoInfo{
+    display: flex;
+}
+
+.pasoNumero, .pasoTexto {
+    font-size: 1em;
+    padding: 5px;
+    outline: 1px solid rgb(255, 255, 255);
+    outline-offset: -0.5px;
+}
+
+.pasoNumero{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    background-color: white;
+    color: black;
+}
+
+.pasoTexto{
+  min-width: 70px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+}
+
+
+
+.iframeMonstruo, .iframeImagenes{
+    flex:2; 
+}
+
+
+#monstruo1{
+    width: 500px;
+}
+
+#iframeMonstruo1, #iframeMonstruo2, #iframeMonstruo3{
+    height: 100%;
+    width: 100%;
+}
+
+#monstruo2{
+    width: 500px;
+}
+
+
+#monstruo3{
+    width: 1100px;
+}
+.iframeImagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width:130px;
+}
+
+
+
+
+.pasoImagen{
+    height: auto;
+    width: 100%;
+    transition: box-shadow .3s;
+    cursor: pointer;
+}
+
+.pasoImagen:hover{
+    box-shadow: 0 3px 10px rgb(255, 255, 255);
+}

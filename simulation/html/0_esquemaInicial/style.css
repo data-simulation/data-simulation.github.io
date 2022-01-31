@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#esquema {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.paso{
+    width: 100%;
+}
+
+.flecha{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+}
+
+.pasoInfo{
+    display: flex;
+}
+
+.pasoNumero, .pasoTexto {
+    font-size: 1em;
+    padding: 5px;
+    margin-bottom: 1em;
+    outline: 1px solid rgb(255, 255, 255);
+    outline-offset: -0.5px;
+}
+
+.pasoNumero{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    background-color: white;
+    color: black;
+}
+
+.pasoTexto{
+  flex: 1;
+  min-width: 70px;
+}
+
+.abajo{
+    display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    body{
+        align-items:flex-start;
+        padding-top: 50px;
+    }
+
+    #esquema {
+        width: 40%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .derecha {
+        display: none;
+    }
+
+    .abajo{
+        display: inline-block;
+        padding: 20px;
+    }
+}
+
+
+.pasoImagen{
+    height: auto;
+    width: 100%;
+}
