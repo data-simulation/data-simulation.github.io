@@ -6,7 +6,7 @@ $(document).ready(function () {
         if(page == 0){
             $(".webViewer").attr('src','html/0_esquemaInicial/index.html');
             $("#numeroPanel").find("p").text("0");
-            $("#tituloPanel").find("p").text("Diagrama");
+            $("#tituloPanel").find("p").text("Resumen");
             $("#infoPanel0").css("display", "inline");
             $("#infoPanel1").css("display", "none");
         }
@@ -70,8 +70,8 @@ $(document).ready(function () {
             /* $("#datos").css("display", "none");
             $("#codigo").css("display", "block"); */
             $(".webViewer").attr('src','html/6_monstruo/index.html');
-            $("#numeroPanel").find("p").text("5");
-            $("#tituloPanel").find("p").text("Proceso inverso");
+            $("#numeroPanel").find("p").text("6");
+            $("#tituloPanel").find("p").text("Ciudad monstruosa");
             $("#infoPanel5").css("display", "none");
             $("#infoPanel6").css("display", "inline");
         }

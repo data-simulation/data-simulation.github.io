@@ -36,98 +36,107 @@
     <div id="controlPanel">
         <div id="headPanel">   
             <div id="numeroPanel"><p>0</p></div>
-            <div id="tituloPanel"><p>Metodología</p></div>
+            <div id="tituloPanel"><p>Resumen</p></div>
         </div>
         <div id="infoPanel">
 
             <div id="infoPanel0">
                 <br>
-                <p>carolina</p>
+                <p>Aphex Twin utilizaba algoritmos para generar los espectrogramas de sus canciones de manera inversa, introduciendo la imagen de su cara en la gráfica para conseguir sonidos inesperados.</p>
                 <br>
-                <p>diagrama</p>
+                <p>Este proceso inverso hace patente nuestra <b>desconexión</b> con las <b>lógicas</b> de la <b>inteligencia artificial</b>, aunque no tenemos por qué verlo como un error sino como una herramienta para proyectar.</p> 
+                <br>
+                <img src="assets/aphex.png" alt="">
                 <br>
                 <br>
-                <img src="assets/yolo.jpg" alt="">
+                <p>En cualquier proceso de proyecto, observamos la realidad para encontrar patrones comunes entre distintas situaciones. La inteligencia artificial nos permite analizarla con un nivel de <b>abstracción</b> similar al de una persona, manejando una <b>cantidad de datos</b> inabarcable de otra forma.</p>
                 <br>
+                <p>Los modelos de inteligencia artificial actuales aún necesitan que la <b>entrada de datos</b> sea <b>homogénea</b>: que situaciones distintas se traduzcan a un mismo formato.</p>
                 <br>
-                <p>diagrama</p>  
+                <p>Nuestro monstruo propone un método para la <b>codificación</b> de una plaza y la posterior decodificación de los resultados del aprendizaje de la Inteligencia Artificial.</p>
                 <br>
-                <p>diagrama</p>
+                <p>El proceso consta de <b>cuatro pasos</b>: obtención de datos, simulación, base de datos y codificación.</p>
+                <br>
+                <p>Al realizar el <b>proceso inverso</b> podemos generar resultados verdaderamente monstruosos e inesperados al generar espacios urbanos a partir de ruido aleatorio o fotos de pimientos o calcetines.</p>
+                <br>
             </div>
 
             <div id="infoPanel1">
                 <br>
-                <p>Registro en video de la plaza Luis Braille de Alicante realizado el 26 de Nomviembre entre las 5 y las 6 de la tarde con un teléfono movil.</p>
+                <p>Para obtener <b>datos del entorno</b>, grabamos con un <b>teléfono móvil</b> la plaza Luis Braille el 26 de noviembre entre las 5 y las 6 de la tarde desde un punto de vista elevado.</p>
                 <br>
-                <p>Procesamiento de las imágenes mediante el algoritmo YOLO. Se detectan distintos agentes y categorias: person, bench, car, truck y bird.</p>
-                <br>
+                <p>Los árboles de la plaza impiden una visión completa de la plaza, por lo que añadimos grabaciones a pie de calle.</p>
                 <br>
                 <img src="assets/yolo.jpg" alt="">
                 <br>
                 <br>
-                <p>Los arboles de la plaza dificultan el análisis de las imágenes por lo que se opta por completarlo con grabaciones a pie de calle.</p>  
+                <p>Utilizamos el <b>algoritmo de detección</b> de objetos <b><i>YOLO</i></b> para procesar las imágenes. Se identifican distintos agentes y categorías: personas, bancos, coches, camiones y pájaros.</p>
                 <br>
-                <p>La categoría BIRD es la que se detecta con menor precisión. YOLO detecta el conjunto pero no los individuos.</p>
+                <p>Observamos que <i>YOLO</i> detecta la <b>categoría pájaro</b> con <b>menor precisión</b>, ya que detecta el conjunto de pájaros pero no los individuos. Esto puede ser por el bajo contraste entre los pájaros y el fondo o porque la frecuencia de detección de <i>YOLO</i> es menor que el movimiento de los pájaros.</p>  
+                <br>
             </div>
 
             <div id="infoPanel2">
                 <br>
-                <p>Al no tener buenos datos de los pájaros, se simulan según las condiciones del algoritmo <i>Flocks, herds and schools: A distributed behavioral model</i> (1987) de Craig Reynolds: separación. alineación y cohesión.</p>
+                <p>Al no tener buenos datos de los pájaros, los <b>simulamos</b> según las condiciones del algoritmo <i><b>Flocks</b>, herds and schools: A distributed behavioral model</i> (1987) de Craig Reynolds: separación, alineación y cohesión.</p>
                 <br>
                 <img src="assets/boids.gif" alt="">
                 <br>
                 <br>
-                <p>La simulación se pone a prueba con los datos del entorno real. A las reglas del algoritmo se añaden condiciones de dimensión del entorno, presencia y movimiento de personas y vehículos, ruido y tiempo para que el comportamiento se ajuste al de la plaza Luis Braille.</p>
+                <p>Completamos esa simulación con los <b>datos del entorno</b> real para que su comportamiento se ajuste al de la plaza Luis Braille, añadiendo a las reglas del algoritmo otras condiciones como las dimensiones del entorno, la presencia y movimiento de personas y vehículos, el ruido o el tiempo.</p>
                 <br>
-                <p>Esta simulación se representa tridimensionalmente para permitir un mejor entendimiento del espacio por parte de humanos.</p>
+                <p>Creamos un <b>modelo tridimensional</b> de la simulación que permite un mejor entendimiento del espacio a <b>humanos</b>, ya que para la codificación de los datos no es necesaria dicha representación.</p>
             </div>
 
             <div id="infoPanel3">
                 <br>
-                <p>La base de datos recopila los datos reales y los simulados para representar todas las dimensiones del entorno.</p>
+                <p>Recopilamos los datos reales y los simulados en una <b>base de datos</b> que representa todas las dimensiones del entorno.</p>
                 <br>
                 <img src="assets/penguin.jpg" alt="">
                 <br>
                 <br>
-                <p>Aunque el modelo 3D es el que mejor entienden las personas, hay dimensiones que no alcanzan a representar, como la evolución en el tiempo.</p>
+                <p>Aunque el modelo 3D es el que mejor entienden las personas, hay dimensiones que no alcanza a representar, como la evolución en el tiempo.</p>
                 <br>
-                <p>La gran cantidad de datos manejados satura el modelo 3D, por lo que se plantean otros métodos de representación que traducen las condiciones a mapas, gráficas y matrices de datos. Del cruzamiento de datos con algoritmos de clusterizado se pueden obtener otros nuevos, como categorías de uso o temporalidad de las actividades.</p>
+                <p>Además, la gran cantidad de datos manejados satura el modelo 3D, por lo que planteamos otros métodos de representación que traducen las condiciones a mapas, gráficas y matrices de datos.</p>
+                <br>
+                <p>Este <b>formato</b> es <b>más adecuado</b> para su tratamiento con inteligencia artificial.</p>
                 <br>
                 <img src="assets/cluster.png" alt="">
+                <br>
+                <br>
+                <p>Cruzando los datos con algoritmos de categorización de la información o <b>clusterización</b> podemos obtener otros nuevos, como tipos de uso o temporalidad de las actividades.</p>
+                <br>
             </div>
 
             <div id="infoPanel4">
                 <br>
-                <p>Toda la información se codifica  y se comprime por dos motivos. Las GPUs trabajan de forma óptima con matrices cuadradas y con la intención de codificar para homogeneizar todas las diferentes plazas y sus condiciones (tipo, tamaño, usos) bajo un lenguaje común.</p>
+                <p>Toda la información se <b>codifica</b> y se <b>comprime</b> por dos motivos: Primero, las tarjetas gráficas trabajan de forma óptima con <b>matrices cuadradas</b>; y segundo, para homogeneizar diferentes plazas y sus condiciones (tipo, tamaño, usos) bajo un lenguaje común.</p>
                 <br>
                 <img src="assets/barcode.jpg" alt="">
                 <br>
                 <br>
-                <p>Esta codificación está pensada para los ordenadores, no para las personas, por lo que no se puede entender a simple vista sin decodificar.</p>
+                <p>Esta codificación está pensada <b>para el ordenador</b>, no para las personas, por lo que no podemos entenderla a simple vista sin decodificar.</p>
                 <br>
                 <img src="assets/texture.jpg" alt="">
                 <br>
                 <br>
-                <p>Esta codificación alberga todas las características que definen cada espacio urbano para comparar todas las distintas plazas y sus relaciones y que el algoritmo aprenda de la base de datos.</p>
+                <p>Esta codificación alberga todas las características que definen cada espacio urbano, por lo que analizando un <b>conjunto de plazas</b> con este proceso, podemos encontrar las características singulares y compartidas de esos espacios.</p>
                 <br>
                 <img src="assets/alpha.jpg" alt="">
+                <br>
             </div>
 
             <div id="infoPanel5">
                 <br>
-                <p>Proceso inverso</p>
+                <p>Aunque planteamos esta codificación y decodificación para trabajar con una inteligencia artificial, podemos hackear el proceso para <b>pervertir los resultados como herramienta de proyecto</b>.</p>
                 <br>
-                <img src="assets/barcode.jpg" alt="">
-                <br>
-                <br>
-                <p>Proceso inverso</p>
-                <br>
-                <img src="assets/texture.jpg" alt="">
+                <img src="assets/pimiento.jpg" alt="">
                 <br>
                 <br>
-                <p>Proceso inverso</p>
+                <p>¿Cómo sería una plaza cuyo <b>espectrograma</b> fuera <b>ruido</b> aleatorio, un <b>pimiento</b> o unos <b>calcetines</b>?</p>
                 <br>
-                <img src="assets/alpha.jpg" alt="">
+                <img src="assets/calcetos.jpg" alt="">
+                <br>
             </div>
 
             <div id="infoPanel6">
