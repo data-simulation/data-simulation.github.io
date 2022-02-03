@@ -143,19 +143,22 @@
 
             <div id="infoPanel6">
                 <br>
-                <p>Monstruo</p>
+                <p>Para generar la ciudad monstruosa, primero tomamos <b>datos en vídeo</b> de una deriva en bicicleta (<i>hotline</i>) por el centro de <b>Alicante</b> y los procesamos con <i>Pix2Pix</i> para generar un modelo <b>segmentado</b> (el algoritmo reconoce los distintos elementos: edificio, pavimento, bicicleta, peatón…). Esos elementos los traduciremos al lenguaje de los pimientos o los calcetines, pero para ello debemos crear una <b>base de datos amplia</b>.</p>
                 <br>
-                <img src="assets/barcode.jpg" alt="">
-                <br>
-                <br>
-                <p>Monstruo</p>
-                <br>
-                <img src="assets/texture.jpg" alt="">
+                <img src="assets/ciudad segmentada.png" alt="">
                 <br>
                 <br>
-                <p>Monstruo</p>
+                <p>Replicamos las imágenes tanto de pimientos como de calcetines con el algoritmo <i>ruDALL-E</i>, generando una base de datos de <b>158</b> imágenes de <b>pimientos</b> y otra de <b>413</b> imágenes de <b>calcetines</b>. De esas imágenes obtenemos sus <b>pares segmentados</b> y con ello entrenamos a Pix2Pix para crear una ciudad pimiento y una ciudad calcetines.
+                </p>
                 <br>
-                <img src="assets/alpha.jpg" alt="">
+                <img src="assets/dataset pimientos.png" alt="">
+                <br>
+                <img src="assets/dataset calcetos.png" alt="">
+                <br>
+                <br>
+                <p><i><u>Haz click en las imágenes de toma de datos para ver los resultados de cada proceso.</u></i> </p>
+                <br>
+                
             </div>
 
         </div>
