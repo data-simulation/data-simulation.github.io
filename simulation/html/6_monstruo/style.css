@@ -49,9 +49,8 @@ body{
 }
 
 .pasoTexto{
-  min-width: 70px;
+  min-width: 80px;
 }
-
 
 
 @media only screen and (max-width: 800px) {
