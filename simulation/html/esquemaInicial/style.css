@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#esquema {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paso{
+    width: 20%;
+    background-color: blue;
+    align-items: stretch;
+}
+
+.flecha{
+    align-items: stretch;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: coral;
+}
+
+.pasoInfo{
+    display: inline-block;
+}
+
+.pasoNumero, .pasoTexto {
+    font-size: 0.8em;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.pasoNumero {
+  width: 10%;
+}
+
+.pasoTexto{
+  width: 80%;
+}
+
+@media only screen and (max-width: 900px) {
+    .pasoNumero, .pasoTexto {
+    font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .pasoNumero, .pasoTexto {
+    font-size: 0.6em;
+    }
+}
+
+.imgPaso{
+    height: auto;
+    width: 100%;
+}
